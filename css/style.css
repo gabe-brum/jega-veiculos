@@ -1,0 +1,388 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+header{
+    min-height: 400px;
+    background-color: #0a3552;
+    color: #ddd;
+    background-image: url('../imgs/header.jpeg');
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.top{
+    margin:0px;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.logo > img{
+    width: 60%;
+}
+
+.social{
+    text-align: left;
+}
+
+.social > i{
+    margin: 0 10px;
+    color: #ddd;
+    font-size: 24px;
+}
+.social > i > span{
+    font-size: 18px;
+    font-weight: 300;
+}
+.nav{
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+}
+/* MODIFICAÇÕES DO CSS DO BOOTSTRAP*/
+
+
+.nav-item{
+    text-decoration: none;
+    color: #ddd;
+    font-size: 18px;
+}
+
+.texto{
+    padding-top: 30px;
+    text-align: center;
+}
+
+.search{
+    padding-top: 20px;
+}
+
+.search > input{
+    width: 100%;
+    height: 65px;
+    border-radius: 5px;
+    border: 0;
+    outline: 0;
+    padding: 10px;
+    background-image: url("../imgs/036-zoom.png");
+    background-size: contain;
+    background-position: right;
+    background-repeat: no-repeat;
+}
+
+.icons{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-top: 20px;
+}
+.icon-single{
+    margin: 0%;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    border: 2px solid #ddd;
+    display: inline-block;
+}
+.icon-single > p{
+    margin: 0;
+}
+.icons a{
+    color: #ddd;
+    text-decoration: none;
+}
+
+.icons a:hover{
+    color: #449aef;
+}
+
+section > h1{
+    margin-top: 100px;
+    padding-left: 20px;
+}
+.social hr{
+    margin: 5px;
+}
+.container-fluid{
+    overflow: hidden;
+}
+
+/* CARROS */
+
+.carro {
+    color: #449aef;
+    border-radius: 15px;
+    margin: 5px;
+    padding: 5px;
+    transition: 0.8s; 
+}
+
+.carro:hover {
+    background-color: #ddd;
+    transition: 0.5s;
+    box-shadow: 0 1px 5px 2px #23232350;
+}
+
+.foto {
+    
+    width: 50%;
+    overflow: hidden;
+}
+/*Layout Carros*/
+.itens-car{
+    display: grid;
+    grid-template-columns: 35% 22.5% 22.5% 20%;
+    grid-template-rows: 15% 35% 50%;
+    border: 3px solid #0a3552;
+    padding: 0;
+    overflow: hidden;
+}
+.imagem-car{
+    height: 100%;
+    grid-row: 1/3 span;
+    width: 100%;
+}
+.informacoes-car2{
+    grid-row: 2;
+    padding-top: 5px;
+    width: 100%;
+}
+
+.img-carro {
+    grid-row: 2;
+    padding-top: 5px;
+    width: 100%;   
+    background-size: cover;
+    transition: 0.5s;
+    border-bottom-left-radius: 15px;
+    border-top-left-radius: 15px;
+}
+
+.nome {
+    grid-row: 1;
+    font-size: 1.5rem;
+    font-weight: 700;
+    letter-spacing: 0.1rem;
+    padding: 5px 0;
+    color: #0a3552;
+    padding-left: 15px;
+}
+
+.descricao-carro {
+    grid-row: 2;
+    font-weight: 700;
+    font-size: 1.1rem;
+    padding: 10px;
+}
+
+.preco {
+    text-align: center;
+    grid-column: 4;
+    grid-row: 2;
+    font-size: 2rem;
+    font-weight: 600;
+    margin: auto;
+    border-bottom: 3px solid #0a3552;
+}
+
+.btninfo{
+    grid-column: 4;
+    grid-row: 3;
+    font-size: 1.3rem;
+    text-align: center;
+    margin: auto;
+    color: #ddd;
+    background-color: #0a3552;
+    border: 2px solid #0a3552;
+    border-radius: 5px;
+    padding: 8px;
+    cursor: pointer;
+    text-transform: capitalize;
+}
+.btninfo:hover{
+    transition: 0.5s;
+    margin: auto;
+    color: #0a3552;
+    background-color: #ddd;
+    border: 2px solid #0a3552;
+}
+.navbar-nav{
+    margin: auto;
+}
+.redes{
+    text-align: center;
+    
+}
+.redes > a{
+    color: #ddd;
+    margin: 8%;
+    font-size: 1.8rem;
+}
+.img-logo{
+    width: 200px;
+}
+
+.redes > a:hover{
+    color: #449aef;
+}
+@media (min-width: 576px){
+    .modal-dialog {
+    max-width: 50% !important;
+    }
+    .img-logo{
+        width: 300px;
+    }
+    .icon-single{
+        margin: 0 20px;
+    }
+    .icon-single > p{
+        margin-bottom: 1rem;
+    }
+}
+
+/* FIM CARROS */
+
+footer{
+    overflow: hidden;
+    z-index: 1;
+    color: #ddd;
+    padding: 25px;
+    background-color: #0a3552;
+}
+
+footer ul{
+    font-size: 1.5rem;
+}
+footer li{
+    list-style: none;
+    padding: 8px;
+    font-size: 1rem;
+}
+footer li a{
+    color: #ddd;
+    text-decoration: none;
+}
+footer li a:hover{
+    color: #449aef;
+    text-decoration: none;
+}
+
+/* FIM CARROS */
+
+
+@media screen and (max-width: 920px){
+    .logo > img{
+        width: 80%;
+    }
+    
+    
+}
+
+@media screen and (max-width: 768px){
+    .logo{
+        text-align: center;
+    }
+
+    .logo > img{
+        width: 50%;
+    }
+    footer{
+        text-align: center;
+    }
+    .itens-car{
+        display: grid;
+        grid-template-rows: 50% 15% 35% ;
+        grid-template-columns: 50% 50%;
+    }
+    .imagem-car{
+        width: 100%;
+        grid-row: 1;
+        grid-column: 1/2 span;
+        background-position: center;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+    }
+    .nome {
+        text-align: center;
+        margin: auto;
+        padding: 25px;
+        grid-row: 2;
+        grid-column: 1;
+        font-size: 1.5rem;
+        font-weight: 600;
+        letter-spacing: 0.1rem;
+        padding: 5px 0;
+        color: #0a3552;
+        padding-left: 15px;
+    }
+    .descricao-carro {
+        text-align: center;
+        margin: auto;
+        grid-row: 3;
+        grid-column: 1;
+        font-size: 1.1rem;
+        padding: 10px;
+    }
+    
+    .preco {
+        text-align: center;
+        grid-column: 2;
+        grid-row: 2;
+        font-size: 2rem;
+        font-weight: 600;
+        margin: auto;
+        border-bottom: 3px solid #0a3552;
+    }
+    
+    .btninfo{
+        grid-column: 2;
+        grid-row: 3;
+        font-size: 1.3rem;
+        text-align: center;
+        margin: auto;
+        color: #ddd;
+        background-color: #0a3552;
+        border: 2px solid #0a3552;
+        border-radius: 5px;
+        padding: 8px;
+        cursor: pointer;
+    }
+}
+
+/*Botão Topo*/
+#myBtn {
+    justify-content: center;
+    text-align: center;
+    display: none;
+    height: 80px;
+    width: 80px;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 1;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: #0a3552;
+    color: white;
+    font-size: 3.1rem;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 50%;
+    border: 1px solid #ddd;
+  }
+  
+  #myBtn:hover {
+    transition: 0.5s;
+    background-color: #449aef;
+}
